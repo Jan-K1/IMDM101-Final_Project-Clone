@@ -17,6 +17,15 @@ public class MouseCamLook : MonoBehaviour
 
     void Update()
     {
+        if (GameOverScreen.activeSelf)
+        {
+            this.enabled = false;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            return;
+        }
+
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 

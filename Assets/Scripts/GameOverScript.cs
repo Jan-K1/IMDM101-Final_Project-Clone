@@ -9,12 +9,10 @@ public class GameOverScript : MonoBehaviour
     public void Setup(int score)
     {
         gameObject.SetActive(true);
-        Debug.Log("CLicked");
     }
 
     public void RestartButton()
     {
         SceneManager.LoadScene("Dungeon_Demo");
-        Debug.Log("CLicked 2");
     }
 }
