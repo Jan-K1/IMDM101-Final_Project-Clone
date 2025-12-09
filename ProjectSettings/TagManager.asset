@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Anchor
   - FieldOfView
+  - Inactive
   layers:
   - Default
   - TransparentFX
